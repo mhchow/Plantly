@@ -1,0 +1,25 @@
+{
+  "name": "plantly",
+  "version": "1.0.0",
+  "description": "Organize all your plants and keep on top of watering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --watch",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhchow/Plantly.git"
+  },
+  "author": "Mary Chow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhchow/Plantly/issues"
+  },
+  "homepage": "https://github.com/mhchow/Plantly#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
