@@ -15,6 +15,7 @@ const WishList = (props) => {
     <Aside>
       <label htmlFor="addPlant">Add a wish list plant</label>
       <input id="addPlant"></input>
+      <button onClick={()=> console.log('add plant to wishlist')}>Add</button>
       <ul>
         <li>Albo Monstera</li>
         <li>Ruby Cascade Peperomia</li>

@@ -5,6 +5,7 @@ const Search = () => {
     <>
       <label htmlFor="search">Search</label>
       <input id="search"></input>
+      <button onClick={()=> console.log('search for')}>Search</button>
     </>
   )
 }

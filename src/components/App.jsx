@@ -7,13 +7,19 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
   box-sizing: border-box;
+  background-color: red;
+  max-width: 100%;
 
 `
 const Display = styled.div`
-  grid-column: 1 / span 4;
+  ${'' /* grid-column: 1 / span 4; */}
+  grid-column-start: 1;
+  grid-column-end: 5;
   background-color: pink;
+  display: flex;
+  flex-direction: row-wrap;
 
   ${'' /* grid-row: span till end; */}
 `
