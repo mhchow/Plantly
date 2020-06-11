@@ -1,12 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const SearchBar = styled.div`
+  justify-content: flex-start;
+
+`
 
 const Search = () => {
   return (
-    <>
-      <label htmlFor="search">Search</label>
-      <input id="search"></input>
+    <SearchBar>
+      <input id="search" placeHolder="search..."></input>
       <button onClick={()=> console.log('search for')}>Search</button>
-    </>
+    </SearchBar>
   )
 }
 

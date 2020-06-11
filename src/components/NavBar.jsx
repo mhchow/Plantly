@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Menu = styled.nav`
   display: flex;
   box-sizing: border-box;
-  height: 20%;
+  justify-content: space-around;
 
 `
 const NavBar = () => {
@@ -14,6 +14,7 @@ const NavBar = () => {
   <Menu>
     <button onClick={() => console.log('clicked "ADD PLANT" button')}>Add Plant</button>
     <Search/>
+    <button>Sort By</button>
   </Menu>
   )
 }

@@ -9,13 +9,14 @@ import styled from 'styled-components';
 const PlantWrapper = styled.div`
   background-color: green;
   box-sizing: border-box;
-  ${'' /* grid-column-start: 1; */}
-  padding: 10%;
-  border-radius: 5%;
+  flex: 0 1 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10px 5px 0px 10px;
+  align-items: center;
 
   p {
     color: white;
-    display: block;
   }
 
   button {

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Aside = styled.aside`
   background-color: blue;
-  grid-column: 5;
+  grid-column: 3;
+  padding: 10px;
 
 `
 
