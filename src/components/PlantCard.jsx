@@ -7,13 +7,19 @@ import styled from 'styled-components';
 // }
 
 const PlantWrapper = styled.div`
-  background-color: green;
   box-sizing: border-box;
   flex: 0 1 20%;
   display: flex;
   flex-flow: column nowrap;
   margin: 10px 5px 0px 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
   align-items: center;
+  &:hover {
+    opacity: 75%;
+
+  }
 
   p {
     color: white;

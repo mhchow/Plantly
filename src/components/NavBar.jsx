@@ -1,20 +1,31 @@
-import React from 'react';
-import Search from './SearchBar.jsx';
-
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
+import Search from './SearchBar.jsx';
+
+import Modal from './Modal.jsx';
+import Button from './Button.jsx';
+
+
+
 const Menu = styled.nav`
+  height: 100px;
   display: flex;
+  flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-around;
+  align-content: center
 
 `
 const NavBar = () => {
+  const [hidden, setHidden] = useState(false);
+
   return (
   <Menu>
-    <button onClick={() => console.log('clicked "ADD PLANT" button')}>Add Plant</button>
+    <button onClick={() => setHidden(!hidden)}>add plant</button>
+    {hidden ? (<Modal/>) : null}
     <Search/>
-    <button>Sort By</button>
+    <Button triggerText={'sort by'} />
   </Menu>
   )
 }

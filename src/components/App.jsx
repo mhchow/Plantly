@@ -1,34 +1,32 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import PlantCard from './PlantCard.jsx';
 import NavigationBar from './NavBar.jsx';
 import WishList from './WishList.jsx';
 import Notes from './Notes.jsx';
+
 
 import styled, {createGlobalStyle} from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: cneter;
+  justify-content: center;
+  background-color: #295e1f;
 `
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: .8fr 4fr 1fr;
   box-sizing: border-box;
-  background-color: red;
-
 `
 const Display = styled.div`
   grid-column-start: 2;
-  background-color: pink;
   display: flex;
   flex-flow: row wrap;
 `
 
-
 const App = () => {
-  const plants = [
+  const myPlants = [
     {
       id: 1,
       name: 'M. adensonii',
@@ -68,23 +66,17 @@ const App = () => {
       location: 'kitchen',
       waterNeeds: 'high',
       lastWatered: '01-01-2020'
-    },
-    {
-      id: 6,
-      name: 'M. adensonii',
-      type: 'Monstera',
-      location: 'kitchen',
-      waterNeeds: 'high',
-      lastWatered: '01-01-2020'
-    },
-    {id: 7,
-      name: 'M. adensonii',
-      type: 'Monstera',
-      location: 'kitchen',
-      waterNeeds: 'high',
-      lastWatered: '01-01-2020'
     }
   ];
+
+  const [plants, setPlants] = useState([]);
+  // const [hidden, setHidden] = useState(true)
+
+  //can be used as componentDidMount, didUpdate, and willUnmount
+  useEffect(() => {
+    setPlants(myPlants)
+  }, [])
+
 
   return (
     <Wrapper>
@@ -98,7 +90,6 @@ const App = () => {
       </Grid>
     </Wrapper>)
 }
-
 
 
 export default App;

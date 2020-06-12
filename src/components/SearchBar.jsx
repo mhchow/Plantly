@@ -9,7 +9,7 @@ const SearchBar = styled.div`
 const Search = () => {
   return (
     <SearchBar>
-      <input id="search" placeHolder="search..."></input>
+      <input id="search" placeholder="search..."></input>
       <button onClick={()=> console.log('search for')}>Search</button>
     </SearchBar>
   )

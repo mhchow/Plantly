@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Aside = styled.aside`
-  background-color: blue;
   grid-column: 3;
   padding: 10px;
 
