@@ -17,7 +17,7 @@ const TextArea = styled.div`
 const Notes = () => {
 
   const [notes, setNotes] = useState([]);
-  const [check, setCheck] = useState(false.toString())
+  const [check, setCheck] = useState(false);
   //notes : [{id: 1, text: 'blah blah'}]
   //array.splice(startIndex, how many elements to remove)
 
