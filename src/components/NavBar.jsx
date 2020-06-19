@@ -9,6 +9,7 @@ import Button from './Button.jsx';
 
 
 const Menu = styled.nav`
+  width: 100%;
   height: 100px;
   display: flex;
   flex-flow: row nowrap;

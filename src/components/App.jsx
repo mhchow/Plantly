@@ -50,22 +50,6 @@ const App = () => {
       location: 'kitchen',
       waterNeeds: 'high',
       lastWatered: '01-01-2020'
-    },
-    {
-      id: 4,
-      name: 'M. adensonii',
-      type: 'Monstera',
-      location: 'kitchen',
-      waterNeeds: 'high',
-      lastWatered: '01-01-2020'
-    },
-    {
-      id: 5,
-      name: 'M. adensonii',
-      type: 'Monstera',
-      location: 'kitchen',
-      waterNeeds: 'high',
-      lastWatered: '01-01-2020'
     }
   ];
 

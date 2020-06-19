@@ -26,7 +26,7 @@ const Notes = () => {
       <p>Notes</p>
       <label>
           <Checkbox
-            status={check}
+            status={check.toString()}
           />
         </label>
 
