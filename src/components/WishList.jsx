@@ -19,6 +19,7 @@ const WishList = (props) => {
       <ul>
         <li>Albo Monstera</li>
         <li>Ruby Cascade Peperomia</li>
+        <li>Peperomia cyclophylla</li>
       </ul>
     </Aside>
   )

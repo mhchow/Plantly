@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/plantly', {userUnifiedTopology: true, useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/plantly', {useUnifiedTopology: true, useNewUrlParser: true});
 
 const db = mongoose.connection;
 

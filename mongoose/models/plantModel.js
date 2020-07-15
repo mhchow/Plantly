@@ -1,35 +1,30 @@
 const mongoose = require('mongoose');
 
-var PlantSchema = new mongoose.Schema({
-  _id: {
-    type: Number,
-    required: true,
-    unique: true
-  },
+const PlantSchema = mongoose.Schema({
   commonName: {
     type: String,
     required: true
   },
   scientificName: {
     type: String,
-    default: 'unkown'
-  }
+    default: 'unknown'
+  },
   family: {
     type: String,
-    default: 'unkown'
+    default: 'unknown'
   },
   location: {
-    type: string,
-    default: 'unkown'
+    type: String,
+    default: 'unknown'
   },
   care: {
     light: {
-      type: string,
-      default: 'unkown'
+      type: String,
+      default: 'unknown'
     },
     water: {
-      type: string,
-      default: 'unkown'
+      type: String,
+      default: 'unknown'
     }
   },
   lastWater: {
@@ -40,3 +35,5 @@ var PlantSchema = new mongoose.Schema({
     type: String
   }
 });
+
+module.exports = mongoose.model('Plant', PlantSchema);

@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #295e1f;
+  background: #295e1f;
 `
 
 const Grid = styled.div`
@@ -45,7 +45,7 @@ const App = () => {
     },
     {
       id: 3,
-      name: 'Raindrop Peperomia',
+      name: 'Raindrop Pep',
       type: 'Peperomia',
       location: 'kitchen',
       waterNeeds: 'high',
