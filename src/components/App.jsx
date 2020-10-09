@@ -4,16 +4,15 @@ import NavigationBar from './NavBar.jsx';
 import WishList from './WishList.jsx';
 import Notes from './Notes.jsx';
 
-
 import styled, {createGlobalStyle} from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #295e1f;
+  background: green;
+  border-radius: 25px;
 `
-
 const Grid = styled.div`
   display: grid;
   grid-template-columns: .8fr 4fr 1fr;
@@ -54,7 +53,7 @@ const App = () => {
   ];
 
   const [plants, setPlants] = useState([]);
-  // const [hidden, setHidden] = useState(true)
+   const [overlay, setOverlay] = useState(false);
 
   //can be used as componentDidMount, didUpdate, and willUnmount
   useEffect(() => {
@@ -65,7 +64,7 @@ const App = () => {
   return (
     <Wrapper>
       <NavigationBar />
-      <Grid>
+      <Grid id='grid'>
         <Notes />
         <Display>
           {plants.map(plant => <PlantCard plant={plant} key={plant.id}/>)}

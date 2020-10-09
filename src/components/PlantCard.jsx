@@ -33,7 +33,7 @@ const PlantWrapper = styled.div`
 const PlantCard = ({plant}) => {
   return (
     <PlantWrapper>
-      <img src="" alt={`image of ${plant.name}`}></img>
+      {/* <img src="" alt={`image of ${plant.name}`}></img> */}
       <p>{plant.name}</p>
       <p>{plant.location}</p>
       <p>Water needs: {plant.waterNeeds}</p>
